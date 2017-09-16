@@ -37,9 +37,17 @@ public abstract class ProgrammingCourse {
         }
     }
 
-    public abstract double getCredits();
-    public abstract void setCredits();
+    public double getCredits() {
+        return credits;
+    }
 
-    
-    
+    public void setCredits(double credits) {
+        if (credits < 0.5 || credits > 4.0) {
+            throw new IllegalArgumentException("Error: credits must be in the range 0.5 to 4.0");
+        }
+        else{
+        this.credits = credits;
+        }
+    }
+
 }
