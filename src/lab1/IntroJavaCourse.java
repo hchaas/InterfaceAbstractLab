@@ -6,5 +6,4 @@ public class IntroJavaCourse extends AdvancedJavaCourse{
         super(courseName, courseNumber);
     }
 
-
 }
