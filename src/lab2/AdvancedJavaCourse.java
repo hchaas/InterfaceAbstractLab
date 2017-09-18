@@ -8,11 +8,11 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
         super(courseName, courseNumber);
     }
 
-    public String getPrerequisites() {
+    public final String getPrerequisites() {
         return prerequisites;
     }
 
-    public void setPrerequisites(String prerequisites) {
+    public final void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             throw new IllegalArgumentException("Invalid entry; prerequisites cannot be blank.");
         }

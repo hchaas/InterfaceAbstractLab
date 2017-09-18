@@ -12,7 +12,7 @@ public class ProgrammingCourse implements Course {
     }
 
     @Override
-    public String getcourseName() {
+    public final String getcourseName() {
         return courseName;
     }
 
@@ -27,7 +27,7 @@ public class ProgrammingCourse implements Course {
     }
 
     @Override
-    public String getcourseNumber() {
+    public final String getcourseNumber() {
         return courseNumber;
     }
 
@@ -41,12 +41,12 @@ public class ProgrammingCourse implements Course {
     }
 
     @Override
-    public double getCredits() {
+    public final double getCredits() {
         return credits;
     }
 
     @Override
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         if (credits < 0.5 || credits > 4.0) {
             throw new IllegalArgumentException("Credits must be between 0.5 and 4.");
         } else {
