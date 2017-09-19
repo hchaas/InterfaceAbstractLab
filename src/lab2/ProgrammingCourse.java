@@ -18,7 +18,7 @@ public class ProgrammingCourse implements Course {
 
     @Override
     public final void setcourseName(String courseName) {
-        if (courseNumber == null || courseNumber.length() == 0) {
+        if (courseName == null || courseName.length() == 0) {
             throw new IllegalArgumentException("Invalid entry; course name cannot be blank.");
         }
         else{
