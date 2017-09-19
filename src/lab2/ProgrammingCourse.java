@@ -22,7 +22,7 @@ public class ProgrammingCourse implements Course {
             throw new IllegalArgumentException("Invalid entry; course name cannot be blank.");
         }
         else{
-        this.courseNumber = courseNumber;
+        this.courseName = courseName;
         }
     }
 
